@@ -1,0 +1,11 @@
+.image {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  transition: all 500ms;
+}
+
+.image:hover {
+  transform: scale(1.25);
+}

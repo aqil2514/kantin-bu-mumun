@@ -1,0 +1,6 @@
+.image-class {
+  position: relative;
+  top: 50px;
+  filter: contrast(80%);
+  pointer-events: none;
+}
