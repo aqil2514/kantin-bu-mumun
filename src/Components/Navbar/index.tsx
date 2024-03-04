@@ -50,9 +50,11 @@ export default function Navbar() {
   useEffect(() => {
     const homeSection = document.getElementById("home") as HTMLDivElement;
     const aboutSection = document.getElementById("about") as HTMLDivElement;
+    const productsSection = document.getElementById("products") as HTMLDivElement;
 
     const homeNav = document.querySelector("a[href='#home']") as HTMLAnchorElement;
     const aboutNav = document.querySelector("a[href='#about']") as HTMLAnchorElement;
+    const productsNav = document.querySelector("a[href='#products']") as HTMLAnchorElement;
 
     const scrollHandler = () => {
       setPositionY({ ...positionY, current: window.scrollY });
@@ -85,9 +87,15 @@ export default function Navbar() {
       if (positionY.current >= homeSection.offsetTop && positionY.current <= aboutSection.offsetTop - 200) {
         homeNav.classList.add("active-nav");
         aboutNav.classList.remove("active-nav");
-      } else if (positionY.current >= aboutSection.offsetTop - 200) {
+        productsNav.classList.remove("active-nav");
+      } else if (positionY.current >= aboutSection.offsetTop - 200 && positionY.current <= productsSection.offsetTop - 200) {
         homeNav.classList.remove("active-nav");
         aboutNav.classList.add("active-nav");
+        productsNav.classList.remove("active-nav");
+      } else if (positionY.current >= productsSection.offsetTop - 200) {
+        homeNav.classList.remove("active-nav");
+        aboutNav.classList.remove("active-nav");
+        productsNav.classList.add("active-nav");
       }
     }
 
