@@ -4,6 +4,7 @@ import HeroSection from "../Components/HeroSection";
 import AboutSection from "../Components/AboutSection";
 import BackToTop from "../Components/BackToTop";
 import MenuSection from "../Components/MenuSection";
+import ContactSection from "../Components/ContactSection";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <HeroSection />
       <AboutSection />
       <MenuSection />
+      <ContactSection />
       <BackToTop />
     </Box>
   );

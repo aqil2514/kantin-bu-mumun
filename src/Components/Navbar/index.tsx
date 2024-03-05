@@ -67,7 +67,7 @@ export default function Navbar() {
       navbarRef.current.style.transform = "translateY(0)";
 
       if (positionY.current >= 100) {
-        navbarRef.current.style.background = "#d47739";
+        navbarRef.current.style.background = "#7ecc1f";
         navbarRef.current.style.position = "fixed";
       } else if (positionY.current <= 10) {
         navbarRef.current.style.background = "none";

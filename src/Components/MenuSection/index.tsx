@@ -66,7 +66,7 @@ export default function MenuSection() {
       </Box>
 
       <FoodContainer>
-        <Box sx={{ display: "flex", width: "100%", justifyContent: "center", gap: "2rem" }}>
+        <Box sx={{ display: "flex", width: "100%", justifyContent: "center", gap: "2rem", flexDirection: { sm: "row", xs: "column" } }}>
           <Box ref={favImage1Ref} sx={{ opacity: "0", transform: "translateX(-100%)", transition: "all", transitionDuration: "1s" }}>
             <Paper elevation={12} sx={{ padding: "1rem", borderRadius: "1rem", maxWidth: "400px" }}>
               <Box sx={{ overflow: "hidden", borderRadius: "1rem" }}>
@@ -118,7 +118,7 @@ export default function MenuSection() {
             <Typography variant="h5" sx={{ fontFamily: '"Lora", sans-serif', fontWeight: "bold" }}>
               Sedia Juga :
             </Typography>
-            <Box sx={{ display: "grid", gridTemplateColumns: "repeat(4, 25%)", textAlign: "center" }}>
+            <Box sx={{ display: "grid", gridTemplateColumns: { md: "repeat(4, 25%)", sm: "repeat(3, 33%)", xs: "repeat(2, 50%)" }, textAlign: "center" }}>
               <Typography variant="body1" sx={{ margin: "0.25rem 0", fontFamily: '"Lora", sans-serif', fontWeight: "bold" }}>
                 - Aneka kopi
               </Typography>
