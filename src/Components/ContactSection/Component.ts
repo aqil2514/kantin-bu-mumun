@@ -5,4 +5,5 @@ export const ContactContainer = styled(Box)({
   width: "100%",
   padding: "2rem",
   minHeight: "100vh",
+  overflow: "hidden",
 });

@@ -51,10 +51,12 @@ export default function Navbar() {
     const homeSection = document.getElementById("home") as HTMLDivElement;
     const aboutSection = document.getElementById("about") as HTMLDivElement;
     const productsSection = document.getElementById("products") as HTMLDivElement;
+    const contactSection = document.getElementById("contacts") as HTMLDivElement;
 
     const homeNav = document.querySelector("a[href='#home']") as HTMLAnchorElement;
     const aboutNav = document.querySelector("a[href='#about']") as HTMLAnchorElement;
     const productsNav = document.querySelector("a[href='#products']") as HTMLAnchorElement;
+    const contactNav = document.querySelector("a[href='#contacts']") as HTMLAnchorElement;
 
     const scrollHandler = () => {
       setPositionY({ ...positionY, current: window.scrollY });
@@ -88,14 +90,22 @@ export default function Navbar() {
         homeNav.classList.add("active-nav");
         aboutNav.classList.remove("active-nav");
         productsNav.classList.remove("active-nav");
+        contactNav.classList.remove("active-nav");
       } else if (positionY.current >= aboutSection.offsetTop - 200 && positionY.current <= productsSection.offsetTop - 200) {
         homeNav.classList.remove("active-nav");
         aboutNav.classList.add("active-nav");
         productsNav.classList.remove("active-nav");
-      } else if (positionY.current >= productsSection.offsetTop - 200) {
+        contactNav.classList.remove("active-nav");
+      } else if (positionY.current >= productsSection.offsetTop - 200 && positionY.current <= contactSection.offsetTop - 200) {
         homeNav.classList.remove("active-nav");
         aboutNav.classList.remove("active-nav");
         productsNav.classList.add("active-nav");
+        contactNav.classList.remove("active-nav");
+      } else if (positionY.current >= contactSection.offsetTop - 200) {
+        homeNav.classList.remove("active-nav");
+        aboutNav.classList.remove("active-nav");
+        productsNav.classList.remove("active-nav");
+        contactNav.classList.add("active-nav");
       }
     }
 
@@ -114,7 +124,7 @@ export default function Navbar() {
       paddingY={"2px"}
     >
       <Grid item xs={6} md={2} marginY="auto">
-        <Typography variant="h6" sx={{ cursor: "pointer" }} onClick={() => (location.href = "/")} color="#ffeb3b" fontSize={"1.4rem"} fontWeight={"900"} fontFamily={'"Lora", sans-serif'}>
+        <Typography variant="h6" sx={{ cursor: "pointer", fontSize: { xs: "1rem", sm: "1.4rem" } }} onClick={() => (location.href = "/")} color="#ffeb3b" fontWeight={"900"} fontFamily={'"Lora", sans-serif'}>
           Kantin Bu Mumun
         </Typography>
       </Grid>

@@ -148,10 +148,10 @@ export default function MenuSection() {
         </Box>
       </FoodContainer>
       <Box ref={orderRef} sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", opacity: "0", transform: "translateY(-100%)", transition: "all", transitionDuration: "1s" }}>
-        <Typography variant="h5" sx={{ margin: "0.25rem 0", fontFamily: '"Lora", sans-serif', fontWeight: "bold" }}>
+        <Typography variant="h5" sx={{ margin: "0.25rem 0", fontFamily: '"Lora", sans-serif', textAlign: "center", fontWeight: "bold" }}>
           Ingin pesan menu yang lain?
         </Typography>
-        <Typography variant="h6" sx={{ margin: "0.25rem 0", fontFamily: '"Lora", sans-serif', fontWeight: "bold" }}>
+        <Typography variant="h6" sx={{ margin: "0.25rem 0", fontFamily: '"Lora", sans-serif', textAlign: "center", fontWeight: "bold" }}>
           Hubungi nomor yang tertera di bawah
         </Typography>
       </Box>

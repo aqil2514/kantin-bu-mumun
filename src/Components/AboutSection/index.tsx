@@ -1,8 +1,6 @@
 import { Box, Paper, Typography } from "@mui/material";
-import { AboutContainer, AboutUsText, AboutUsTextContainer, GoogleMap, IconContainer, MapAboutContainer } from "./component";
-import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafety";
+import { AboutContainer, AboutUsText, AboutUsTextContainer, GoogleMap, HealthyFoodIcon, IconContainer, MapAboutContainer, YummyIcon } from "./component";
 import PaidIcon from "@mui/icons-material/Paid";
-import AddReactionIcon from "@mui/icons-material/AddReaction";
 import { useEffect, useRef, useState } from "react";
 
 export default function AboutSection() {
@@ -64,11 +62,11 @@ export default function AboutSection() {
 
       <IconContainer ref={iconRef}>
         <Box textAlign={"center"}>
-          <AddReactionIcon sx={{ fontSize: "6rem", color: "darksalmon", border: "10px double darksalmon", padding: ".2rem", borderRadius: "50%" }} />
+          <YummyIcon />
           <Typography sx={{ fontSize: "1rem", color: "darksalmon", fontFamily: '"Poppins", sans-serif', fontWeight: "bold" }}>Rasa Lezat</Typography>
         </Box>
         <Box textAlign={"center"}>
-          <HealthAndSafetyIcon sx={{ fontSize: "6rem", color: "darksalmon", border: "10px double darksalmon", padding: ".2rem", borderRadius: "50%" }} />
+          <HealthyFoodIcon />
           <Typography sx={{ fontSize: "1rem", color: "darksalmon", fontFamily: '"Poppins", sans-serif', fontWeight: "bold" }}> Dijamin Sehat</Typography>
         </Box>
         <Box textAlign={"center"}>
