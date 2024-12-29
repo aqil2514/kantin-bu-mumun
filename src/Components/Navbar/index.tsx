@@ -125,7 +125,7 @@ export default function Navbar() {
     >
       <Grid item xs={6} md={2} marginY="auto">
         <Typography variant="h6" sx={{ cursor: "pointer", fontSize: { xs: "1rem", sm: "1.4rem" } }} onClick={() => (location.href = "/")} color="#ffeb3b" fontWeight={"900"} fontFamily={'"Lora", sans-serif'}>
-          Kantin Bu Mumun
+          Kantin Sukawangi
         </Typography>
       </Grid>
       <Grid item sx={{ display: { xs: "none", md: "flex" } }} xs={8} container rowSpacing={4} marginY={"auto"} direction="row" justifyContent="center" alignContent="center" id="navigation">

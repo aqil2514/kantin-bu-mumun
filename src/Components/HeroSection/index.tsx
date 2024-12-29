@@ -25,7 +25,7 @@ export default function HeroSection() {
         <img src="/asset/main-food.png" alt="Main food" className="image-class" />
       </GraphSection>
       <InfoSection ref={infoSectionRef}>
-        <CanteenName variant="h3">Kantin Bu Mumun</CanteenName>
+        <CanteenName variant="h3">Kantin Sukawangi</CanteenName>
 
         <Address variant="h6">Jl. Raya Sukawangi No.1, Sukawangi, Bekasi, Jawa Barat 17620, Indonesia</Address>
 

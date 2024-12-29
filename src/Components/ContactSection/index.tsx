@@ -75,7 +75,7 @@ export default function ContactSection() {
               color="error"
               startIcon={<img src="/asset/google-map-icon.png" alt="google map icon" width={32} height={32} />}
             >
-              Kantin Bu Mumun
+              Kantin Sukawangi
             </Button>
           </Box>
         </Box>

@@ -45,7 +45,7 @@ export default function AboutSection() {
         <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, justifyContent: "center", gap: "1rem", width: "100%" }}>
           <Paper elevation={12} sx={{ borderRadius: "1rem", padding: "2rem" }}>
             <Typography variant="h6" textAlign={"center"}>
-              Kantin Bu Mumun
+              Kantin Sukawangi
             </Typography>
             <Typography variant="body1">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore itaque, id, eveniet pariatur quia provident rerum eos consequuntur ipsam doloremque, quaerat ducimus aperiam aut ratione veniam a accusantium sed ea illum
